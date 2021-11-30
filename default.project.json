@@ -1,0 +1,60 @@
+{
+  "name": "untitled-game",
+  "tree": {
+    "$className": "DataModel",
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "GlobalShadows": true,
+        "Technology": "ShadowMap",
+        "ShadowSoftness": 0.5,
+        "TimeOfDay": "14:00:00",
+        "GeographicLatitude": 45,
+        "Brightness": 2
+      }
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Models": {
+        "$path": "models"
+      },
+      "Packages": {
+        "$path": "src/packages",
+
+
+        "module_template": {
+          "$path": "modules/module_template"
+        }
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+    "SoundService": {
+      "$className": "SoundService",
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "FilteringEnabled": true
+      }
+    }
+  }
+}
