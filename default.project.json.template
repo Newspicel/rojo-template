@@ -19,7 +19,12 @@
         "$path": "models"
       },
       "Packages": {
-        "$path": "src/packages"
+        "$path": "src/packages",
+
+
+        "module_template": {
+          "$path": "modules/module_template"
+        }
       }
     },
     "ServerScriptService": {
@@ -37,6 +42,12 @@
         "Client": {
           "$path": "src/client"
         }
+      }
+    },
+    "SoundService": {
+      "$className": "SoundService",
+      "$properties": {
+        "RespectFilteringEnabled": true
       }
     },
     "Workspace": {
