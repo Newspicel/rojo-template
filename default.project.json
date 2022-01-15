@@ -41,7 +41,8 @@
       "$className": "Workspace",
       "$properties": {
         "FilteringEnabled": true
-      }
+      },
+      "$path": "workspace"
     }
   }
 }
