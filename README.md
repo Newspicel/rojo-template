@@ -20,7 +20,7 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
 ```bash
 selene src
 ```
-Needs [selene](https://kampfkarren.github.io/selene/selene.html) to be installed!
+Needs [selene](https://kampfkarren.github.io/selene/selene.html) to be installed.
 
 ## Package manager:
 [wally](https://wally.run/). Wally has some nice packages for Roblox development.
