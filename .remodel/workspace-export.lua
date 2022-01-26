@@ -1,7 +1,7 @@
 local game = remodel.readPlaceFile(".remodel/World.rbxl")
 
-local Models = game.Workspace
+local workspace = game.Workspace
 
-for _, model in ipairs(Models:GetChildren()) do
-	remodel.writeModelFile(model, "workspace/" .. model.Name .. ".rbxmx")
+for _, content in ipairs(workspace:GetChildren()) do
+	remodel.writeModelFile(content, "workspace/" .. content.Name .. ".rbxmx")
 end
