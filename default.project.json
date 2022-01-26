@@ -15,17 +15,23 @@
     },
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
-      "Models": {
-        "$path": "models"
-      },
       "Packages": {
         "$path": "src/packages"
+      },
+
+      "WallyPackages": {
+        "$className": "WallyPackages",
+        "$path": "Packages"
       }
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "Server": {
         "$path": "src/server"
+      },
+      "WallyServerPackages": {
+        "$className": "WallyServerPackages",
+        "$path": "ServerPackages"
       }
     },
     "StarterPlayer": {
@@ -43,6 +49,15 @@
         "FilteringEnabled": true
       },
       "$path": "workspace"
+    },
+    "TestService": {
+      "$className": "TestService",
+      "$path": "src/test",
+
+      "WallyDevPackages": {
+        "$className": "WallyDevPackages",
+        "$path": "DevPackages"
+      }
     }
   }
 }

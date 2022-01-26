@@ -5,3 +5,13 @@ registry = "https://github.com/UpliftGames/wally-index"
 realm = "server"
 
 [dependencies]
+# Dependencies in ReplicatedStorage
+
+
+[server-dependencies]
+# Server dependencies. Only Avaible on Server
+
+
+[dev-dependencies]
+# Test / Dev dependencies. In Testservice 
+

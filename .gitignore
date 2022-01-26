@@ -9,3 +9,9 @@
 
 # Selene Roblox File
 /roblox.toml
+
+# Wally Files
+/wally.lock
+/DevPackages
+/ServerPackages
+/Packages
