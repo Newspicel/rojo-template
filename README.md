@@ -29,5 +29,6 @@ Needs [selene](https://kampfkarren.github.io/selene/selene.html) to be installed
 - Rojo
 - Roblox LSP
 - Roblox API Explorer
+- Selene
 
 
