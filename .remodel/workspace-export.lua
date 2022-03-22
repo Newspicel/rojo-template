@@ -1,4 +1,4 @@
-local game = remodel.readPlaceFile(".remodel/World.rbxl")
+local game = remodel.readPlaceFile(".remodel/place.rbxl")
 
 local workspace = game.Workspace
 
