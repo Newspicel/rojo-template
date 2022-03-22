@@ -15,22 +15,19 @@
     },
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
-      "Packages": {
-        "$path": "src/packages"
+      "$path": "src/shared",
+      "Modules": {
+        "$path": "modules"
       },
-
-      "WallyPackages": {
-        "$className": "WallyPackages",
+      "Packages": {
         "$path": "Packages"
       }
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
-      "Server": {
-        "$path": "src/server"
-      },
-      "WallyServerPackages": {
-        "$className": "WallyServerPackages",
+      "$path": "src/server",
+      "ServerPackages": {
+        "$className": "ServerPackages",
         "$path": "ServerPackages"
       }
     },
@@ -53,9 +50,8 @@
     "TestService": {
       "$className": "TestService",
       "$path": "src/test",
-
-      "WallyDevPackages": {
-        "$className": "WallyDevPackages",
+      "DevPackages": {
+        "$className": "DevPackages",
         "$path": "DevPackages"
       }
     }
