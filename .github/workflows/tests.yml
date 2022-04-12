@@ -59,6 +59,3 @@ jobs:
         with:
           commit_message: Restyle Luau
           commit_user_name: Stylua
-
-  
-      
