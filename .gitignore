@@ -12,3 +12,6 @@
 /DevPackages
 /ServerPackages
 /Packages
+
+# Github Workflow
+.foreman-install/
