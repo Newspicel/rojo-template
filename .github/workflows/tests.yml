@@ -37,6 +37,9 @@ jobs:
 
     - name: Install dependencies
       run: wally install
+    
+    - name: Create Folder if not exist
+      run: mkdir -p Packages; mkdir -p DevPackages; mkdir -p ServerPackages
 
     - name: Run Test
       run: rojo build --output build.rbxl
@@ -55,7 +58,6 @@ jobs:
         run: stylua src/
 
       - uses: stefanzweifel/git-auto-commit-action@v4
-        if: steps.auto-commit-action.outputs.changes_detected == 'true'
         with:
           commit_message: Restyle Luau
           commit_user_name: Stylua
