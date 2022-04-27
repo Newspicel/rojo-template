@@ -25,7 +25,9 @@
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
-      "$path": "src/server",
+      "Server":{
+        "$path": "src/server"
+      },
       "ServerPackages": {
         "$className": "ServerPackages",
         "$path": "ServerPackages"
