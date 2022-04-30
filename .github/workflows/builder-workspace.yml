@@ -29,6 +29,9 @@ jobs:
         env:
           ROBLOSECURITY: ${{ secrets.ROBLOSECURITY }}
           ASSETID: 9082085677 # Builders Place
+          
+      - name: Delete old Workspace Files
+        run: rm workspace/*
 
       - name: Run Remodel Script
         run: remodel run .remodel/workspace-export.lua
