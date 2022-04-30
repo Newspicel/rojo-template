@@ -40,4 +40,6 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
 - Roblox API Explorer
 - Selene
 
+## Github Workflow Run
+Set the Github action secret "ROBLOSECURITY" to a Roblox account user cookie. (Use only one account per workflow/project).
 
