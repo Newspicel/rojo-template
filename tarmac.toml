@@ -1,0 +1,7 @@
+name = "rojo-template"
+
+[[inputs]]
+glob = "assets/**/*.png"
+codegen = true
+codegen-path = "src/shared/assets.lua"
+codegen-base-path = "assets"

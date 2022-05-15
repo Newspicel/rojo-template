@@ -4,3 +4,4 @@ remodel = { source = "rojo-rbx/remodel", version = "0.9.1" }
 selene = { source = "Kampfkarren/selene", version = "0.17.0" }
 stylua = { source = "JohnnyMorganz/stylua", version = "0.13.1" }
 wally = { source = "UpliftGames/wally", version = "0.3.1" }
+foreman = { source = "Roblox/tarmac", version = "0.7.0" }
