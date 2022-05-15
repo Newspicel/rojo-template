@@ -2,17 +2,6 @@
   "name": "rojo-template",
   "tree": {
     "$className": "DataModel",
-    "Lighting": {
-      "$className": "Lighting",
-      "$properties": {
-        "Technology": "ShadowMap",
-        "ShadowSoftness": 0.5,
-        "GlobalShadows": true,
-        "TimeOfDay": "14:00:00",
-        "GeographicLatitude": 45.0,
-        "Brightness": 2.0
-      }
-    },
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
       "$path": "src/shared",
