@@ -4,22 +4,26 @@
     "$className": "DataModel",
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
-      "$path": "src/shared",
       "Modules": {
         "$path": "modules"
       },
       "Packages": {
-        "$path": "Packages"
-      }
+        "$path": {
+          "optional": "Packages"
+        }
+      },
+      "$path": "src/shared"
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
-      "Server":{
+      "Server": {
         "$path": "src/server"
       },
       "ServerPackages": {
         "$className": "ServerPackages",
-        "$path": "ServerPackages"
+        "$path": {
+          "optional": "ServerPackages"
+        }
       }
     },
     "StarterPlayer": {
@@ -31,20 +35,22 @@
         }
       }
     },
+    "TestService": {
+      "$className": "TestService",
+      "DevPackages": {
+        "$className": "DevPackages",
+        "$path": {
+          "optional": " DevPackages"
+        }
+      },
+      "$path": "src/test"
+    },
     "Workspace": {
       "$className": "Workspace",
       "$properties": {
         "FilteringEnabled": true
       },
       "$path": "workspace"
-    },
-    "TestService": {
-      "$className": "TestService",
-      "$path": "src/test",
-      "DevPackages": {
-        "$className": "DevPackages",
-        "$path": "DevPackages"
-      }
     }
   }
 }

@@ -1,21 +1,21 @@
 {
-    "name": "builder-place",
-    "tree": {
-      "$className": "DataModel",
-      "Lighting": {
-        "$className": "Lighting",
-        "$properties": {
-          "Technology": "ShadowMap",
-          "ShadowSoftness": 0.5,
-          "GlobalShadows": true,
-          "TimeOfDay": "14:00:00",
-          "GeographicLatitude": 45.0,
-          "Brightness": 2.0
-        }
-      },
-      "Workspace": {
-        "$className": "Workspace",
-        "$path": "workspace"
+  "name": "builder-place",
+  "tree": {
+    "$className": "DataModel",
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "GlobalShadows": true,
+        "GeographicLatitude": 45.0,
+        "Brightness": 2.0,
+        "TimeOfDay": "14:00:00",
+        "Technology": "ShadowMap",
+        "ShadowSoftness": 0.5
       }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$path": "workspace"
     }
   }
+}
