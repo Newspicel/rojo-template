@@ -26,6 +26,11 @@ jobs:
     - name: Run Test
       run: rojo build --output build.rbxl
 
+    - uses: actions/upload-artifact@v3
+      with:
+        path: build.rbxl
+        if-no-files-found: error
+
     - name: Upload Roblox File to release
       uses: svenstaro/upload-release-action@v2
       with:

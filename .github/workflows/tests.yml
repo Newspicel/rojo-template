@@ -41,6 +41,11 @@ jobs:
     - name: Run Test
       run: rojo build --output build.rbxl
 
+    - uses: actions/upload-artifact@v3
+      with:
+        path: build.rbxl
+        if-no-files-found: error
+
   stylua:
     name: Lua Styling
     runs-on: ubuntu-latest
