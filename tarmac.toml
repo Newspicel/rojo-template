@@ -1,4 +1,6 @@
 name = "rojo-template"
+upload-to-group-id = 123456
+
 
 [[inputs]]
 glob = "assets/**/*.png"
