@@ -37,9 +37,6 @@ jobs:
 
     - name: Install dependencies
       run: wally install
-    
-    - name: Create Folder if not exist
-      run: mkdir -p Packages; mkdir -p DevPackages; mkdir -p ServerPackages
 
     - name: Run Test
       run: rojo build --output build.rbxl

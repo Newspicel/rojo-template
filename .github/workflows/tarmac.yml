@@ -1,0 +1,27 @@
+name: Tarmac
+
+on: workflow_dispatch
+
+jobs:
+  sync:
+    name: Sync Tarmac to Roblox
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: Roblox/setup-foreman@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Sync Tarmac
+        run: tarmac sync --target roblox --retry 3 --auth $AUTH
+        env:
+          AUTH: ${{ secrets.ROBLOSECURITY }}
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        if: always()
+        with:
+          commit_message: Sync Tarmac
+          commit_user_name: Tarmac
+

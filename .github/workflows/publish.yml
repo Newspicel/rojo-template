@@ -1,8 +1,6 @@
 name: Publish-Project
 
-on:
-  push:
-    branches: ['release']
+on: release
 
 jobs:
   publish:

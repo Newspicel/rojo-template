@@ -1,0 +1,43 @@
+name: Workspace-Download
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0/6 * * *"
+
+jobs:
+  download-workspace:
+    name: Download Workspace
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: Roblox/setup-foreman@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+           
+      - uses: actions/setup-python@v3.0.0
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Download Workspace
+        run: python3 scripts/download_place.py
+        env:
+          ROBLOSECURITY: ${{ secrets.ROBLOSECURITY }}
+          ASSETID: 123456789 # Builders Place
+          
+      - name: Delete old Workspace Files
+        run: rm workspace/*
+
+      - name: Run Remodel Script
+        run: remodel run .remodel/workspace-export.lua
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Workspace
+          commit_user_name: Roblox
