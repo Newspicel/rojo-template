@@ -51,6 +51,18 @@
         "FilteringEnabled": true
       },
       "$path": "workspace"
+    },
+    "HttpService": {
+      "$className": "HttpService",
+      "$properties": {
+        "HttpEnabled": true
+      }
+    },
+    "SoundService": {
+      "$className": "SoundService",
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
     }
   }
 }
